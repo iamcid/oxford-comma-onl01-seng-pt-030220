@@ -7,6 +7,7 @@ def oxford_comma(array)
     array.each_with_index do |fruit, index|
       return +="and"+ fruit if index == array.size - 1
       break if index == array.size - 1
-      string +=
+      string += fruit + ","
   end
+  return string
 end
